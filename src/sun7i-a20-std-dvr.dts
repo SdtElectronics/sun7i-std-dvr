@@ -56,12 +56,56 @@
 
 	aliases {
 		serial0 = &uart0;
-        serial1 = &uart7;
+        serial7 = &uart7;
 	};
 
 	chosen {
 		stdout-path = "serial0:115200n8";
-        stdout-path = "serial1:115200n8";
+	};
+
+    	cpus {
+		#address-cells = <1>;
+		#size-cells = <0>;
+
+		cpu0: cpu@0 {
+			compatible = "arm,cortex-a7";
+			device_type = "cpu";
+			reg = <0>;
+			clocks = <&ccu CLK_CPU>;
+			clock-latency = <244144>; /* 8 32k periods */
+			operating-points = <
+                /* kHz	  uV */
+                1008000	1450000
+                960000	1400000
+                912000	1400000
+                864000	1350000
+                720000	1250000
+                528000	1150000
+                312000	1100000
+                144000	1050000
+                >;
+			#cooling-cells = <2>;
+		};
+
+		cpu1: cpu@1 {
+			compatible = "arm,cortex-a7";
+			device_type = "cpu";
+			reg = <1>;
+			clocks = <&ccu CLK_CPU>;
+			clock-latency = <244144>; /* 8 32k periods */
+			operating-points = <
+                /* kHz	  uV */
+                1008000	1450000
+                960000	1400000
+                912000	1400000
+                864000	1350000
+                720000	1250000
+                528000	1150000
+                312000	1100000
+                144000	1050000
+                >;
+			#cooling-cells = <2>;
+		};
 	};
 
     hdmi-connector {
@@ -105,21 +149,6 @@
 	hdmi_out_con: endpoint {
 		remote-endpoint = <&hdmi_con_in>;
 	};
-};
-
-&cpu0 {
-	cpu-supply = <&reg_dcdc2>;
-    operating-points = <
-		/* kHz	  uV */
-        100800	1450000
-		960000	1400000
-		912000	1400000
-		864000	1350000
-		720000	1250000
-		528000	1150000
-		312000	1100000
-		144000	1050000
-		>;
 };
 
 &i2c0 {
@@ -251,6 +280,18 @@
 &uart0 {
 	pinctrl-names = "default";
 	pinctrl-0 = <&uart0_pb_pins>;
+	status = "okay";
+};
+
+&uart1 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&uart1_pa_pins>;
+	status = "okay";
+};
+
+&uart3 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&uart3_ph_pins>;
 	status = "okay";
 };
 
