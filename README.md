@@ -22,7 +22,7 @@ This repository contains information and mainline related sources of a CDR board
 ![front](img/pinout.jpg)
 Currently explored available peripherals:
 * 1xlcd/lvds port (lcd0)
-* 1xcsi port, with 1xi2c embedded (csi0, i2c)
+* 1xcsi port, with 1xi2c embedded (csi0, i2c1)
 * 1xusb otg (usb0)
 * 1xi2c (i2c2)
 * 1xnand (nand0)
