@@ -49,6 +49,7 @@
 #include <dt-bindings/gpio/gpio.h>
 #include <dt-bindings/input/input.h>
 #include <dt-bindings/interrupt-controller/irq.h>
+#include <dt-bindings/pwm/pwm.h>
 
 / {
 	model = "SdtElectronics A20-SdtElectronics-std-DVR";
@@ -63,7 +64,7 @@
 		stdout-path = "serial0:115200n8";
 	};
 
-    	cpus {
+    cpus {
 		#address-cells = <1>;
 		#size-cells = <0>;
 
@@ -107,7 +108,7 @@
 			#cooling-cells = <2>;
 		};
 	};
-
+    
     hdmi-connector {
 		compatible = "hdmi-connector";
 		type = "a";

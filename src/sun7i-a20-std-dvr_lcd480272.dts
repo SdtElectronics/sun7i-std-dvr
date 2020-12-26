@@ -43,7 +43,7 @@
  */
 
 /dts-v1/;
-#include "sun7i-a20.dtsi"
+#include "sun7i-a20-pRGBlcd.dtsi"
 #include "sunxi-common-regulators.dtsi"
 
 #include <dt-bindings/gpio/gpio.h>
