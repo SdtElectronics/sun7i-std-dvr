@@ -29,14 +29,14 @@ Currently explored available peripherals:
 * 4xUART (uart0, uart1, uart3, uart7)
 
 ### Schematic
-There is no actual schematic for this board found yet. However, there is a schematic for another CDR solution designed by AllWinner available at doc/. Nevertheless that board shares many similarities with this one, some significant differences are already observed. Take that as a reference at your own risk.
+There is no actual schematic for this board found yet. However, there is a schematic for another CDR solution designed by AllWinner available at [doc/A20-CDR-V0-2-20150312.pdf](doc/A20-CDR-V0-2-20150312.pdf). Nevertheless that board shares many similarities with this one, some significant differences are already observed. Take that as a reference at your own risk.
 
 ## Mainline Build Instructions
 (WIP)
 
 ## Peripherals Instructions
 ### LCD
-There is a standard 40pin parallel RGB lcd port on board, connected to panel controller lcd0 on chip. For instructions about driving lcds, please refer to [LCD](doc/lcd.md)
+There is a standard 40pin parallel RGB lcd port on board, connected to panel controller lcd0 on chip. For instructions about driving lcds, please refer to [LCD](doc/lcd.md).
 
 ### HDMI
 There is a mini-HDMI port on board. HDMI support is enabled in both u-boot and kernel by default with configurations provided by this repository. 

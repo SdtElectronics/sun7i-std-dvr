@@ -4,7 +4,7 @@ This document introduces how to use the 40pin panel controller output (lcd0) on 
 
 ## NOTICES
 ### Enabling LCD Power
-The power of lcd is controlled by PH08 (active low). Thus, PH08 must be pull low to enable the lcd. This can be accomplished in u-boot either manually or by adding these lines to boot.cmd:
+The power of lcd is controlled by PH08 (active low). Thus, PH08 must be pulled low to enable the lcd. This can be accomplished in u-boot either manually or by adding these lines to boot.cmd:
 ```
 gpio set 232
 gpio clear 232
