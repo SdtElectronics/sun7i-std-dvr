@@ -2,7 +2,7 @@
 
 This repository contains information and mainline related sources of a CDR board based on AllWinner's A20(sun7i) SoC.
 
-![front](img/front.jpg)
+![front](img/dual.png)
 
 ## Repository Layout
 * [doc/](https://github.com/SdtElectronics/sun7i-std-dvr/tree/master/doc)  Documentation and datasheet
@@ -19,7 +19,7 @@ This repository contains information and mainline related sources of a CDR board
 
 ### Pinout
 (WIP)
-![front](img/pinout.jpg)
+![front](img/pinout.png)
 Currently explored available peripherals:
 * 1xlcd/lvds port (lcd0)
 * 1xcsi port, with 1xi2c embedded (csi0, i2c1)
