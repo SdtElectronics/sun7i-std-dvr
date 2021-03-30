@@ -70,9 +70,11 @@ The gadget may not be recognized by Windows right after configuration. In this c
 First, download RNDIS driver [here](https://www.catalog.update.microsoft.com/Search.aspx?q=32589075-1506-4042-9bc4-a3009153023b).
 
 Right click "This Computer" and select "management". Switch to "Device Manager" at the left side of the window popped up.
+
 ![](https://filestore.community.support.microsoft.com/api/images/e7b71a01-756c-41fd-9e15-f36bc90615ae)
 
 Right click the device with name "RNDIS" and select "Update Driver Software".
+
 ![](https://www.factoryforward.com/wp-content/uploads/2018/01/11.pi-zero-w-with-laptop-factoryforward.png)
 
 Specify the path to the folder where you have extracted the driver files.

@@ -52,3 +52,5 @@ With the USB gadget support in kernel, this board can be emulated as a variety o
     (WIP)
 * #### Mass Storage
     (WIP)
+
+For more about configfs USB gadget, please refer to [kernel documentation](https://www.kernel.org/doc/Documentation/usb/gadget_configfs.txt).
