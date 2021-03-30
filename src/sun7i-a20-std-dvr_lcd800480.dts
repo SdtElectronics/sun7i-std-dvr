@@ -240,11 +240,6 @@
 };
 
 &pio {
-	usb0_id_detect_pin: usb0_id_detect_pin@0 {
-		allwinner,pins = "PH4";
-		allwinner,function = "gpio_in";
-	};
-
     mmc0_cd_pin_std_dvr: mmc0_cd_pin@0 {
 		allwinner,pins = "PH4";
 		allwinner,function = "gpio_in";
@@ -323,7 +318,7 @@
 };
 
 &uart7 {
-	pinctrl-names = "default";
+	pinctrl-names = "peripheral";
 	pinctrl-0 = <&uart7_pa_pins>;
 	status = "okay";
 };
@@ -334,8 +329,6 @@
 };
 
 &usbphy {
-	usb0_id_det-gpios = <&pio 7 4 GPIO_ACTIVE_HIGH>; /* PH04 */
-    usb0_vbus_power-supply = <&usb_power_supply>;
 	usb0_vbus-supply = <&reg_usb0_vbus>;
 	usb1_vbus-supply = <&reg_usb1_vbus>;
 	usb2_vbus-supply = <&reg_usb2_vbus>;
