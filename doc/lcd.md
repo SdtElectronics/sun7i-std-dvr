@@ -12,6 +12,8 @@ gpio clear 232
 These lines are added to [src/boot.cmd](https://github.com/SdtElectronics/sun7i-std-dvr/blob/master/src/boot.cmd) in this repository already.
 
 ### Backlight
+Backlight of some panels consumes significant amount of power. Insufficient power supply to board could cause hang during boot with LCD connected. It is highly recommend that powering the board with 9V or above power supply via DC connector when a LCD is connected.
+
 Backlight can be controlled by /sys/class/backlight/backlight/brightness :
 ```
 echo 9 > /sys/class/backlight/backlight/brightness

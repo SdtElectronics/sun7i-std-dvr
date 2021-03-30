@@ -40,3 +40,15 @@ There is a standard 40pin parallel RGB lcd port on board, connected to panel con
 
 ### HDMI
 There is a mini-HDMI port on board. HDMI support is enabled in both u-boot and kernel by default with configurations provided by this repository. 
+
+### USB Gadget (Peripheral Mode)
+USB0 in A20 SoC features a dual-role controller thus can be operated in both host and peripheral mode. However, the mini-USB port on board attached to USB0 did not wire cd pin to the chip, so the otg functionality is not supported. You have to specify the role of USB0 manually in the device-tree file or switch it in procfs. All of the device-tree files in this repository set USB0 to peripheral mode by default.
+
+With the USB gadget support in kernel, this board can be emulated as a variety of devices, which enables fast and convenient communication between this board and a PC. Guides on emulating this board as some devices via configfs are listed below:
+
+* #### [Ethernet Gadget (RNDIS Net Adapter)](doc/RNDIS.md)
+    Board can be recognized as a net adapter and share network with PC
+* #### Serial Gadget
+    (WIP)
+* #### Mass Storage
+    (WIP)
