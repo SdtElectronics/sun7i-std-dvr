@@ -54,3 +54,6 @@ With the USB gadget support in kernel, this board can be emulated as a variety o
     (WIP)
 
 For more about configfs USB gadget, please refer to [kernel documentation](https://www.kernel.org/doc/Documentation/usb/gadget_configfs.txt).
+
+### Accelerometer
+There is a [lis3dh](https://www.st.com/en/mems-and-sensors/lis3dh.html?icmp=pf250725_pron_pr_feb2014&sc=lis3dh-pr) accelerometer from STMicroelectronics on board, connected to i2c1 bus at address 0x19. For detailed instructions, please refer to [Accelerometer](doc/Accelerometer.md).
