@@ -203,9 +203,9 @@
     */
 	status = "okay";
 
-	lis3dh@32 {
+	lis3dh@19 {
 		compatible = "st,lis3dh";
-		reg = <0x32>;
+		reg = <0x19>;
 		label = "LIS3DH";
 	};
 
