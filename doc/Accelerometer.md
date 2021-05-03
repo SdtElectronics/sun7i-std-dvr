@@ -1,5 +1,5 @@
 # Accelerometer
-There is a [lis3dh](https://www.st.com/en/mems-and-sensors/lis3dh.html?icmp=pf250725_pron_pr_feb2014&sc=lis3dh-pr) accelerometer from STMicroelectronics on board, connected to `i2c1` bus at address `0x19`. The corresponding driver is available in mainline kernel and is configured as module in the `.config` file provided by this repository already. If you want to configure it manually, the path in `mennuconfig` is
+There is a [lis3dh](https://www.st.com/en/mems-and-sensors/lis3dh.html?icmp=pf250725_pron_pr_feb2014&sc=lis3dh-pr) accelerometer from STMicroelectronics on board, connected to `i2c1` bus at address `0x19`. The corresponding driver is available in mainline kernel and is configured as module in the `.config` file provided by this repository already. If you want to configure it manually, the path in `menuconfig` is
 ```
     Device Drivers  --->
         Industrial I/O support  ---> 

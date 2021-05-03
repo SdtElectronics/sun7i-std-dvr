@@ -289,6 +289,25 @@
 	regulator-name = "avcc";
 };
 
+/*
+* Notice: ldo3 and ldo4 supply power for DVP Camera
+* If a DVP Camera is used the voltage should be adjusted accordingly.
+*/
+
+&reg_ldo3 {
+	regulator-always-on;
+	regulator-min-microvolt = <3300000>;
+	regulator-max-microvolt = <3300000>;
+	regulator-name = "avcc";
+};
+
+&reg_ldo4 {
+	regulator-always-on;
+	regulator-min-microvolt = <3300000>;
+	regulator-max-microvolt = <3300000>;
+	regulator-name = "avcc";
+};
+
 &reg_usb0_vbus {
 	status = "okay";
 };
