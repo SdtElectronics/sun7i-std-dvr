@@ -1,0 +1,2 @@
+*.cmd linguist-detectable=false
+*.dts linguist-detectable=true
